@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Document</title>
+    <script defer src="/assets/js/script.js"></script>
+    <script defer src="/assets/js/forecast.js"></script>
 </head>
 <body>
     <main>
@@ -12,13 +14,13 @@
         <div class="container-weather">
             <h2>Now</h2>
             <div class="temperature">
-                <p>25&deg;<sup>c</sup></p>
+                <p id="temperature">&deg;<sup>c</sup></p>
                 <p>Icon</p>
             </div>
-            <p>temps qui fait</p>
+            <p id="weather">temps qui fait</p>
             <div class="border-grey"></div>
-            <p>date d'aujourd'hui</p>
-            <p>ville</p>
+            <p id="date"></p>
+            <p id="ville"></p>
         </div>
         
         <h2>5 Days forecast</h2>
@@ -27,33 +29,33 @@
 
         
             <li class="days-5">
-            <p>25&deg;<sup>c</sup></p>
-            <p>2 Mar</p>
+            <p id="temperature-1"></p>
+            <p id="days-1"></p>
             <p>Thursday</p>
             </li>
         
         
             <li class="days-5">
-            <p>25&deg;<sup>c</sup></p>
-            <p>lldlf</p>
+            <p id="temperature-2"></p>
+            <p id="days-2"></p>
             <p>dflsdflsd</p>
             </li>
         
             <li class="days-5">
-            <p>25&deg;<sup>c</sup></p>
-            <p>lldlf</p>
+            <p id="temperature-3"></p>
+            <p id="days-3"></p>
             <p>dflsdflsd</p>
             </li>
         
             <li class="days-5">
-            <p>25&deg;<sup>c</sup></p>
-            <p>lldlf</p>
+            <p id="temperature-4"></p>
+            <p id="days-4"></p>
             <p>dflsdflsd</p>
             </li>
         
             <li class="days-5">
-            <p>25&deg;<sup>c</sup></p>
-            <p>lldlf</p>
+            <p id="temperature-5"></p>
+            <p id="days-5"></p>
             <p>dflsdflsd</p>
             </li>
         </div>
