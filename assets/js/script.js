@@ -3,6 +3,10 @@ async function request(city) {
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
    
 
+
+
+
+
     try {
         const response = await fetch(url);
 
@@ -37,4 +41,13 @@ async function request(city) {
     }
 }
 
-request("Gembloux,BE");
+
+document.getElementById("city-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêche la soumission traditionnelle du formulaire
+
+    const city = document.getElementById("city-input").value;
+    if (city) {
+        request(city); // Appelle la fonction de requête avec la ville entrée
+    }
+});
+
