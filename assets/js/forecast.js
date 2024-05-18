@@ -38,13 +38,23 @@ requestNextFiveDays("Gembloux,BE").then(forecasts => {
     // Boucler à travers les prévisions pour les 5 jours suivants
     forecasts.forEach((forecast, index) => {
         const forecastDate = new Date(forecast.dt * 1000);
-        const daysId = `days-${index + 1}`;
-        const daysElement = document.getElementById(daysId);
+        const dateId = `date-${index + 1}`;
+        const dateElement = document.getElementById(dateId);
+        const daysId = `days-${index + 1}`
+        const daysElement = document.getElementById(daysId)
 
-        if (daysElement) {
+
+        if (dateElement) {
             const options = { day: 'numeric', month: 'short' };
             const formattedDate = forecastDate.toLocaleDateString('en-US', options);
+            dateElement.textContent = formattedDate;
+        }
+
+        if (daysElement){
+            const options = { weekday: 'long'}
+            const formattedDate = forecastDate.toLocaleDateString('en-US', options);
             daysElement.textContent = formattedDate;
+
         }
 
         // Construire l'identifiant de l'élément de température

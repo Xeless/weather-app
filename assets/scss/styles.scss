@@ -60,6 +60,12 @@ body {
         -webkit-backdrop-filter: blur(1.6px);
         border: 1px solid rgba(67, 67, 67, 0.3);
 
+        p:nth-child(1){
+          font-size: 2rem;
+          margin: 4% 0 2% 0;
+          font-weight: bold;
+        }
+
         .temperature {
           display: flex;
           justify-content: space-between;

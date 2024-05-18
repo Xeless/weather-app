@@ -53,6 +53,11 @@ body main .container-wrapper .container-weather {
   -webkit-backdrop-filter: blur(1.6px);
   border: 1px solid rgba(67, 67, 67, 0.3);
 }
+body main .container-wrapper .container-weather p:nth-child(1) {
+  font-size: 2rem;
+  margin: 4% 0 2% 0;
+  font-weight: bold;
+}
 body main .container-wrapper .container-weather .temperature {
   display: flex;
   justify-content: space-between;
@@ -75,7 +80,7 @@ body main .container-wrapper .container-5days {
 }
 body main .container-wrapper .container-5days .days-5 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 body main .container-todays {
   margin-top: 10%;

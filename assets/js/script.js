@@ -13,7 +13,7 @@ async function request(city) {
 
 
         const temperatureElement = document.getElementById("temperature");
-        temperatureElement.innerHTML = `${firstTemp}&deg;<sup>c</sup>`;
+        temperatureElement.innerHTML = `${firstTemp}&deg;<sup>C</sup>`;
         
         const dateElement = document.getElementById("date");
         const currentDate = new Date();
