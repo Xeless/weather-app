@@ -81,6 +81,8 @@ body main .container-wrapper .container-5days {
 body main .container-wrapper .container-5days .days-5 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 body main .container-todays {
   margin-top: 10%;
